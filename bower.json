@@ -1,0 +1,30 @@
+{
+  "name": ".",
+  "version": "0.0.1",
+  "authors": [
+    "阿良 <arliang725@163.com>"
+  ],
+  "description": "express http mock server",
+  "main": "app.js",
+  "keywords": [
+    "mock",
+    "server"
+  ],
+  "license": "MIT",
+  "homepage": "/",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jasmine": "~2.2.1",
+    "jquery": "1.11.2",
+    "mockjs": "~0.1.6",
+    "backbone": "1.1.2",
+    "bootstrap": "3.3.2"
+  }
+}
