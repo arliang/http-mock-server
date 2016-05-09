@@ -1,4 +1,4 @@
-require('watchfile')
+require('../watchfile')
 var express = require('express');
 var router = express.Router();
 //var mockjs = require('mockjs');

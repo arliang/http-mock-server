@@ -3,7 +3,7 @@ var fs = require('fs');
 var request = {}, res = {};
 var text;
 var filename = 'settings/request.json';
-var ansi = require('ansi-style');
+var ansi = require('ansi-styles');
 
 function readJSON(){
     console.log('readJSON');
@@ -19,13 +19,12 @@ function readJSON(){
                 error: 'It may contains error in file ' + filename
             }));
             global.res = res;
-            return false;
         } finally {
             if(global.request){
-                console.error(ansi.red.open + global.request + ansi.red.close);
+                console.log(global.request);
             }
             if(res && res.text){
-                console.error(res.text);
+                console.error(ansi.bgRed.open + res.text + ansi.bgRed.close);
             }
         }
     } else {  // 找不到文件
